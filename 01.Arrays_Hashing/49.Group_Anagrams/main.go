@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -31,7 +30,6 @@ func groupAnagrams(strs []string) [][]string {
 		key := freqKey(str)
 		groups[key] = append(groups[key], str)
 	}
-	fmt.Println(groups)
 
 	result := make([][]string, 0, len(groups))
 
